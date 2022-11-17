@@ -256,7 +256,6 @@ function RandIntGen(min, max){
 
 function ArrRandNumGen(nElements, min, max, noArr){
     const arr = [];
-    console.log(noArr);
     while(arr.length<nElements){
         const n=RandIntGen(min, max);
         if(!arr.includes(n) && !noArr.includes(n)){
