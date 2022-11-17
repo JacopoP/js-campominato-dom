@@ -11,10 +11,25 @@
     <header>
         <h1>Campo minato</h1>
         <div id="btn-container">
+            <label for="difficulty">Dimensioni griglia</label>
             <select class="btn" id="difficulty">
                 <option value="10">10 x 10</option>
                 <option value="9">9 x 9</option>
                 <option value="7">7 x 7</option>
+            </select>
+            <label for="mines">Numero mine</label>
+            <select class="btn" id="mines">
+                <option value="20">20</option>
+                <option value="19">19</option>
+                <option value="18">18</option>
+                <option value="17">17</option>
+                <option value="16">16</option>
+                <option value="15">15</option>
+                <option value="14">14</option>
+                <option value="13">13</option>
+                <option value="12">12</option>
+                <option value="11">11</option>
+                <option value="10">10</option>
             </select>
             <button class="btn" id="generate">Genera</button>
         </div>
@@ -24,7 +39,7 @@
         <h2></h2>
     </main>
     <footer>
-
+        <p>Un click per mettere la bandiera. Due click per scoprire la casella</p>
     </footer>
     <script src="js/script.js"></script>
 </body>

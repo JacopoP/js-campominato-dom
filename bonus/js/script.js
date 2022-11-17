@@ -8,8 +8,8 @@ document.getElementById("generate").addEventListener("click",
         container.innerHTML="";
         console.clear();
         const n=parseInt(document.getElementById("difficulty").value);
-        const bombArr=ArrRandNumGen(16, 1, n*n);
-        console.log(bombArr);
+        const mines=parseInt(document.getElementById("mines").value);
+        const bombArr=ArrRandNumGen(mines, 1, n*n);
         let score=0;
         for(let i=0; i<n*n; i++){
             const newElement = createBox(n);            
@@ -189,7 +189,7 @@ document.getElementById("generate").addEventListener("click",
                                 this.innerHTML=m;
                             }
 
-                            if(score==(n*n-16)){
+                            if(score==(n*n-mines)){
                                 result.classList.remove("hide");
                                 result.innerHTML=`Hai vinto!`
                                 for(let k=0; k<n*n; k++){
